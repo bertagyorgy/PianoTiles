@@ -1,0 +1,46 @@
+<!Doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Piano Tiles - Egyszerű verzió</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="index.css">
+  <script src="script2.js" defer></script>
+</head>
+<body>
+  <!--https://mp4juice.co/home mp4 converter-->
+  <div class="wrap">
+    <header>
+      <h1 id="score" class="score-center">0</h1>
+    </header>
+
+    <div class="game-container">
+      <div class="game-area" id="gameArea">
+        <div class="columns" id="columns">
+          <div class="column" data-col="0"></div>
+          <div class="column" data-col="1"></div>
+          <div class="column" data-col="2"></div>
+        </div>
+        <div class="overlay" id="overlay" style="display:none">
+          <div class="center-card" id="gameOverCard">
+            <h2 id="goTitle">Játék vége</h2>
+            <p>Pontszám: <strong id="finalScore">0</strong></p>
+            <p>Perfect: <span id="finalPerfect">0</span></p>
+            <p>Great: <span id="finalGreat">0</span></p>
+            <button class="btn small" id="restartBtn">Újra</button>
+            <button class="btn small" id="exitBtn">Kilépés</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="judgeLine"></div>
+
+    <div style="text-align:center;margin-top:12px">
+      <button id="startBtn" class="btn"><i class="fa-solid fa-play"></i></button>
+    </div>
+  </div>
+
+  
+</body>
+</html>
