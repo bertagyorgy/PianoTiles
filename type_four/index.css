@@ -1,0 +1,119 @@
+:root {
+  --bg:#0f1724;
+  --tile:#111827;
+  --tile-hit:#16a34a;
+  --text:#e6eef6;
+}
+*{box-sizing:border-box}
+html,body {
+  height:100%;
+  margin:0;
+  font-family:Inter,Segoe UI,Roboto,system-ui,Arial;
+  background:linear-gradient(180deg,var(--bg),#031022);
+  color:var(--text);
+}
+.wrap {
+  height:100%;
+  display:flex;
+  flex-direction:column;
+}
+header {
+  text-align:center;
+  padding:5px 0;
+}
+i{
+  color: white;
+}
+.score-center {
+  margin:0;
+  font-size:32px;
+}
+.game-container {
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.game-area {
+  position:relative;
+  width:360px;
+  height:calc(100vh - 100px); /* teljes magasság, header és gomb kivételével */
+  max-height:100%;
+  /*background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.15));*/
+  background-color: #d1cdcd;
+  border-radius:8px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,0.03);
+}
+.columns {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  height:100%;
+}
+.column {
+  position:relative;
+  border-left:1px solid rgba(255,255,255,0.05);
+}
+.column:first-child { border-left:0; }
+
+.tile {
+  position:absolute;
+  left:8%;
+  width:84%;
+  background:linear-gradient(180deg,#0b1220,#111827);
+  border-radius:8px;
+  box-shadow:0 6px 18px rgba(2,6,23,0.6);
+  cursor:pointer;
+  user-select:none;
+}
+
+#judgeLine {
+  position: absolute;
+  top: 75%;
+  /*left: 0;*/
+  width: 375px;
+  margin-left: calc(50vw - 195px);
+  height: 2px;
+  background: white;
+  z-index: 1;
+}
+.tile.hit {
+  background:linear-gradient(180deg,#064e3b,var(--tile-hit));
+  transform:scale(0.98);
+}
+.btn {
+  width: 100px;
+  background:linear-gradient(180deg,#0ea5a5,#0284c7);
+  border:none;
+  padding:8px 12px;
+  border-radius:8px;
+  color:white;
+  cursor:pointer;
+}
+.small{padding:6px 8px;font-size:14px}
+.overlay {
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.center-card {
+  background:rgba(2,6,23,0.85);
+  padding:22px;
+  border-radius:12px;
+  text-align:center;
+}
+
+#overlay {
+  position: fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background:rgba(0,0,0,0.85);
+  color:white;
+  display:none;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  z-index:9999;
+}

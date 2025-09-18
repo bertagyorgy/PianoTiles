@@ -1,0 +1,32 @@
+{
+  "bpm": 120,
+  "notes": [
+    { "time": 0, "col": 0, "type": "small" },
+    { "time": 500, "col": 1, "type": "small" },
+    { "time": 500, "col": 2, "type": "small" },
+
+    { "time": 1500, "col": 1, "type": "normal"},
+
+    { "time": 3200, "col": 0, "type": "small" },
+    { "time": 3200, "col": 2, "type": "small" },
+
+    { "time": 4000, "col": 1, "type": "normal" },
+    { "time": 4000, "col": 2, "type": "normal" },
+
+    { "time": 5500, "col": 1, "type": "normal" },
+    { "time": 8000, "col": 2, "type": "normal" },
+
+    { "time": 9000, "col": 0, "type": "normal" },
+    { "time": 9800, "col": 0, "type": "normal" },
+    { "time": 10500, "col": 1, "type": "normal" },
+
+    { "time": 11000, "col": 1, "type": "small" },
+    { "time": 11500, "col": 2, "type": "small" },
+
+    { "time": 12000, "col": 0, "type": "normal" },
+    { "time": 12500, "col": 2, "type": "normal"   },
+
+    { "time": 13000, "col": 1, "type": "normal" },
+    { "time": 14000, "col": 2, "type": "normal" }
+  ]
+}
